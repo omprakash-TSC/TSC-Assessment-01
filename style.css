@@ -67,7 +67,7 @@ font-family: "poppins";
     font-size: 1.2vw;
     color: black;
     line-height: 20px;
-    padding-top: 2%;
+    padding-top: 3%;
     font-family: "Poppins";
 }
 #m-btn{
@@ -75,16 +75,15 @@ font-family: "poppins";
     margin-top: 5%;
 }
 .search-house{
-    width: 84%;
-    margin-left: 8%;
+    width: 80%;
+    margin-left: 10%;
     padding: 1.5%;
-    position: absolute;
-    top: 85%;
+    transform: translate(0%, -30%);
     background-color: white;
 }
 input[type=text]{
     width: 38%;
-    padding: 10px 15px;
+    padding: 12px 15px;
     border: 1px solid #0f2480;
   }
 .search-item{
@@ -95,7 +94,7 @@ input[type=text]{
 .search{
     background-color: #f97616;
     width: 20%;
-    height: 6vh;
+    height: 7vh;
     border: none;
     color: white;
 }
@@ -141,14 +140,24 @@ input[type=text]{
 .h-sale-top{
     text-align: center;
 }
+.sale-top-content{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40%;
+}
 .h-sale{
     display: flex;
     justify-content: center;
+    padding-top: 5%;
 }
 .heading-sale{
     padding-top: 4%;
 }
-.heading-sale-right{
+.h-space{
+    margin-right: 10px;
+}
+.main{
+    margin-right: 2%;
 }
 .h-cards{
     width:100%;
@@ -206,6 +215,9 @@ input[type=text]{
 .our-price{
     display: flex;
     justify-content: center;
+}
+.price-space{
+    margin-right: 1%;
 }
 .price-bottom{
     /* border: 1px solid; */
@@ -360,28 +372,47 @@ width: 40%;
     margin-top: 3%;
     padding-bottom: 3%;
 }
+
 .next{
     width: 50px;
     height: 50px;
     border-radius: 25px;
     background-color: #0f2480;
-    margin-top: 2%;
+    margin-top: 6%;
 }
 .review-info{
-    width: 60%;
+    font-size: 1.2vw;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.reviewer-logo{
+    width: 30%;
+    position: relative;
+}
+.reviewer-info{
+    position: relative;
+    top: 20%;
+    left: 10%;
+}
+#person{
+    position: absolute;
+    top: 16%;
+    left: 50%;
 }
 .prev{
     width: 50px;
     height: 50px;
     border-radius: 25px;
     background-color: #0f2480;
-    margin-top: 2%;
+    margin-top: 6%;
 }
 .next-btn{
     color: white;
     padding-top: 7%;
     text-align: center;
-    padding-top: 20%;
+    padding-top: 13%;
     font-size: 25px;
 }
 .contact-us{
@@ -507,6 +538,10 @@ input[type=email]{
   }
   #checkbtn{
     display: none;
+    color: black;
+  }
+  .fa-bars{
+    color: black;
   }
   #check:checked ~ .nav-menu{
     left:25%;
@@ -517,6 +552,17 @@ input[type=email]{
 
 @media (min-width:350px) and (max-width:450px) { 
 
+.review-bottom{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.review-bottom :nth-child(2) { order: 2; }
+
+    .logo h1{
+        padding: 4%;
+        font-size: 7vw;
+    }
     .nav-menu{
         width: 50%;
         height: 30vh;
@@ -543,4 +589,170 @@ input[type=email]{
         display: block;
         padding: 4%;
       }
+      .main-house-left{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+      }
+      .about{
+        display: flex;
+        flex-direction: column
+      }
+      .section-left{
+        width: 100%;   
+      }
+      .section-right{
+        width: 100%;
+      }
+      .about-content-top h1{
+        font-size: 6.2vw;
+        padding-top: 2%;
+      }
+      .about-content-bottom{
+        text-align: center;
+      }
+      .about-content-bottom p{
+        font-size: 3.2vw;
+      }
+      .read-more{
+        width: 40%;
+        height: 4vh;
+      }
+      .h-sale{
+        padding: 4%;
+        margin-left: 17%;
+      }
+      .h-sale-top p{
+        font-size: 3vw;
+      }
+      .sale-top-content {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 0%;
+      }
+      #square-img{
+        display: none;
+      }
+      .heading-sale {
+        font-size: 3.2vw;
+        padding-top: 0%;
+    }
+    .heading-sale h1{
+        padding-top: 3%;
+    }
+    .h-cards-top {
+        flex-direction: column;
+        width: 90%;
+        margin-left: 5%;
+        display: flex;
+        height: 0%;
+
+    }
+    .cards{
+        width: 100%;
+    }
+    .cards-top {
+        height: 0%;
+        padding-top: 10%;
+    }
+    .cards-bottom{
+        text-align: center;
+    }
+    .h-cards-bottom{
+        height: 0%;
+        display: flex;
+        flex-direction: column;
+    }
+    .f-more{
+        border-radius: 25px;
+        width: 30%;
+        height: 5vh;
+    }
+    .price h1 {
+        font-size: 8vw;
+    }
+    .price p {
+        font-size: 3.2vw;
+        line-height: 20px;
+    }
+    .price-bottom {
+        /* height: 95vh; */
+        display: flex;
+        flex-direction: column;
+    }
+    .p-card {
+        padding-top: 5%;
+        width: 100%;
+    }
+    .p-cart-top {
+        height: 8vh;
+    }
+    .card-info{
+        padding-top: 2%;
+    }
+    .p-info {
+        padding: 7%;
+    }
+    .p-cart-bottom{
+        height: 0%;
+    }
+    .buy{
+        border-radius: 25px;
+        width: 37%;
+        height: 5vh;
+    }
+    .deal{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .deal-left{
+        width: 100%;
+    }
+    .deal-left-top h1 {
+        font-size: 6vw;
+        padding-top: 2%;
+    }
+    .deal-right{
+        width: 100%;
+    }
+    .deal-info{
+        text-align: center;
+    }
+    .deal-info p{
+        font-size: 3.2vw;
+    }
+    .about-top h1{
+        padding-top: 2%;
+        font-size: 7vw;
+    }
+    .about-icon {
+        height: 3vh;
+        width: 7vw;
+    }
+    .about-info{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .experience {
+        line-height: 3vh;
+        font-size: 2vw;
+    }
+    .experience h1 {
+        font-size: 4vw;
+    }
+    .btn-quote {
+        width: 29%;
+        height: 5vh;
+        font-size: 3vw;
+        margin-bottom: 1%;
+    }
+    .review{
+        margin-top: 10%;
+    }
+    .review-top h1 {
+        font-size: 5.6vw;
+        padding-top: 2%;
+        /* text-align: center; */
+    }
 }
