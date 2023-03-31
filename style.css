@@ -127,9 +127,17 @@ input[type=text]{
     border: 1px solid #0f2480;
     background-color: white;
 }
+.read-more:hover{
+    color: white;
+    background-color: #0f2480;
+}
 .about-content-bottom{
     font-family: "Poppins";
     padding: 3%;
+}
+.about-content-bottom p{
+    color: rgb(81, 81, 81);
+    font-size: 1.1vw;
 }
 .house-sale{
     width: 94%;
@@ -139,6 +147,10 @@ input[type=text]{
 }
 .h-sale-top{
     text-align: center;
+}
+.house-sale p{
+    color: rgb(81, 81, 81);
+    font-size: 1.1vw;
 }
 .sale-top-content{
     display: flex;
@@ -174,15 +186,22 @@ input[type=text]{
     /* border: 1px solid; */
     width: 32%;
 }
+.cards:hover{
+    scale: 110%;
+    box-shadow: 3px 3px 5px rgb(128, 127, 127);
+}
 .cards-top{
     height: 43vh;
 }
 .cards-top img{
-    height: 43vh;
+    height: 45vh;
 }
 .cards-bottom{
     padding-top: 5%;
 }
+/* .cards-bottom h3{
+    font-weight: bold;
+} */
 .h-cards-bottom{
     padding-top: 3%;
     /* border: 1px solid; */
@@ -201,6 +220,10 @@ input[type=text]{
     height: 6vh;
     color: #0f2480;
     border: 1px solid #0f2480;
+}
+.f-more:hover{
+    color: white;
+    background-color: #0f2480;
 }
 .price{
     /* border: 1px solid red; */
@@ -273,9 +296,19 @@ input[type=text]{
     border:none;
     background-color: #3554d1;
 }
+.buy:hover{
+    color: #0f2480;
+    border: 1px solid #0f2480;
+    background-color: #fcfcfc
+}
 #btn{
     border:none;
     background-color: #f9bc16;
+}
+#btn:hover{
+    color: #f9bc16;
+    border: 1px solid #f9bc16;
+    background-color: #fcfcfc;
 }
 .deal{
     /* border: 1px solid; */
@@ -285,6 +318,10 @@ input[type=text]{
     display: flex;
     justify-content: space-between;
     font-family: "Poppins";
+}
+.deal p{
+    color: rgb(81, 81, 81);
+    font-size: 1.1vw;
 }
 .deal-left{
     /* border: 1px solid; */
@@ -297,6 +334,9 @@ input[type=text]{
 }
 .deal-info{
     padding: 2%;
+}
+.quote{
+    width: 24%;
 }
 .deal-right{
     /* border: 1px solid; */
@@ -319,6 +359,7 @@ width: 40%;
     font-family: "poppins";
 }
 .about-top{
+    padding-top: 3%;
     display: flex;
     justify-content: center;
 }
@@ -344,6 +385,7 @@ width: 40%;
 .about-btn{
     text-align: center;
     padding-top: 3%;
+    padding-bottom: 1%;
 }
 .btn-quote{
     width: 20%;
@@ -351,7 +393,7 @@ width: 40%;
     height: 8vh;
     background-color: white;
     color: black;
-    font-size: 1.8vw;
+    font-size: 1.6vw;
 }
 .review{
     /* border: 1px solid; */
@@ -359,6 +401,10 @@ width: 40%;
     margin-left: 10%;
     font-family: "Poppins";
     margin-top: 5%;
+}
+.review p{
+    color: rgb(81, 81, 81);
+    font-size: 1.1vw;
 }
 .review-top{
     display: flex;
@@ -371,6 +417,7 @@ width: 40%;
     padding-top: 5%;
     margin-top: 3%;
     padding-bottom: 3%;
+    align-items: center;
 }
 
 .next{
@@ -378,15 +425,19 @@ width: 40%;
     height: 50px;
     border-radius: 25px;
     background-color: #0f2480;
-    margin-top: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .review-info{
     font-size: 1.2vw;
     width: 70%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     
 }
+
 .reviewer-logo{
     width: 30%;
     position: relative;
@@ -406,13 +457,14 @@ width: 40%;
     height: 50px;
     border-radius: 25px;
     background-color: #0f2480;
-    margin-top: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .next-btn{
     color: white;
     padding-top: 7%;
     text-align: center;
-    padding-top: 13%;
     font-size: 25px;
 }
 .contact-us{
@@ -436,7 +488,6 @@ width: 40%;
 }
 .contacts-form{
     width: 50%;
-    border: 1 px solid red;
     background-color: #0f2480;
    
 }
@@ -444,6 +495,11 @@ width: 40%;
     padding: 5%;
 }
 .input{
+    width: 80%;
+    height: 7vh;
+    margin-top: 1rem;
+}
+#input-text{
     width: 80%;
     height: 7vh;
     margin-top: 1rem;
@@ -540,9 +596,6 @@ input[type=email]{
     display: none;
     color: black;
   }
-  .fa-bars{
-    color: black;
-  }
   #check:checked ~ .nav-menu{
     left:25%;
     /* display: block !important; */
@@ -552,12 +605,6 @@ input[type=email]{
 
 @media (min-width:350px) and (max-width:450px) { 
 
-.review-bottom{
-    display: flex;
-    flex-direction: column-reverse;
-}
-
-.review-bottom :nth-child(2) { order: 2; }
 
     .logo h1{
         padding: 4%;
@@ -590,11 +637,36 @@ input[type=email]{
         padding: 4%;
       }
       .main-house-left{
-        width: 100%;
-        display: flex;
-        flex-direction: column-reverse;
-        flex-wrap: wrap;
+        width: 44%;
       }
+      .main-house-right{
+        width: 80%;
+      }
+      #m-btn {
+        width: 45%;
+        height: 3vh;
+        font-size: 2vw;
+        margin-top: 9%;
+    }
+    .content-top {
+        width: 100%;
+        font-size: 3.5vw;
+        line-height: 2.5rem;
+        margin: 15%;
+        padding-top: 32%;
+    }
+    #info-top {
+        font-size: 2.2vw;
+    }
+    .search{
+        height: 3vh;
+    }
+    input[type=text] {
+        height: 3vh;
+    }
+    .search-house{
+        padding: 2%;
+    }
       .about{
         display: flex;
         flex-direction: column
@@ -749,10 +821,131 @@ input[type=email]{
     }
     .review{
         margin-top: 10%;
+        width: 90%;
+        margin-left: 5%;
     }
     .review-top h1 {
         font-size: 5.6vw;
         padding-top: 2%;
         /* text-align: center; */
+    }
+    .review-bottom{
+        height: 25vh;
+    }
+    .next{
+        width: 28px;
+        height: 28px;
+    }
+    .prev{
+        width: 28px;
+        height: 28px;
+    }
+    .reviewer-info {
+        position: relative;
+        top: 20%;
+        left: 2%;
+        width: 64%;
+        text-align: left;
+        word-break: break-all;
+    }
+    .reviewer-info h3{
+        font-size: 3vw;
+    }
+    .reviewer-info p{
+        font-size: 2.2vw;
+    }
+    #bg-logo {
+        width: 10vw;
+        height: 20vh;
+    }
+    #person{
+        left: 34%;
+        width: 15vw;
+        height: 14vh;
+    }
+    .contact-us-top{
+        margin-top: 7%;
+    }
+    .contact-us-top h1 {
+        font-size: 7vw;
+        padding-top: 2%;
+    }
+    .contact-us-bottom {
+        display: flex;
+        flex-direction: column;
+    }
+    .map{
+        width: 100%;
+    }
+    .input{
+        width: 100%;
+        height: 5vh;
+    }
+    #input-text{
+        width: 100%;
+        height: 5vh;
+    }
+    .contacts-form{
+        width: 100%;
+    }
+    #text {
+        height: 10vh;
+    }
+    .submit{
+        height: 4vh;
+    }
+    .s-btn {
+        width: 25%;
+        margin-left: 70%;
+        padding-bottom: 1%;
+    }
+    .footer-top {
+        width: 80%;
+        margin-left: 10%;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-menu {
+        width: 100%;
+        text-align: center;
+    }
+    .footer-menu li{
+        font-size: 4.5vw;
+        display: inline;
+        margin-left: 8%;
+    }
+    .icon {
+        padding-right: 2%;
+    }
+    .footer-menu h3 {
+        font-size: 6vw;
+        padding-top: 6%;
+    }
+    .footer-menu p {
+        font-size: 4vw;
+        padding-top: 4%;
+    }
+    .footer-menu ul {
+        padding-top: 4%;
+    }
+    #subscribe {
+        width: 32%;
+        height: 4vh;
+    }
+    .footer-menu1 {
+        text-align: center;
+        margin-top: 5%;
+    }
+    .footer-menu1 h3 {
+        font-size: 6vw;
+    }
+    .footer-icon a {
+        padding: 6%;
+        font-size: 5.6vw;
+    }
+    .footer-bottom {
+        width: 70%;
+        margin-left: 15%;
+        font-size: 3.5vw;
     }
 }
