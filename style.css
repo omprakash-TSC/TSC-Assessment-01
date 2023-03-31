@@ -19,11 +19,11 @@ body{
     padding: 1%;
 }
 .logo h1{
-    font-size: 3.5vw;;
-    text-transform: uppercase;
+    font-size: 3.5vw;
+    font-weight: bolder;
     color: rgb(255, 255, 255);
     font-family: "Poppins";
-    -webkit-text-stroke-width: 0.11px;
+    -webkit-text-stroke-width: 0.80px;
     -webkit-text-stroke-color: #3554d1;
 }
 .nav-menu{
@@ -97,6 +97,7 @@ input[type=text]{
     height: 7vh;
     border: none;
     color: white;
+    cursor: pointer;
 }
 .about{
     width: 80%;
@@ -126,6 +127,7 @@ input[type=text]{
     color: #0f2480;
     border: 1px solid #0f2480;
     background-color: white;
+    cursor: pointer;
 }
 .read-more:hover{
     color: white;
@@ -220,6 +222,7 @@ input[type=text]{
     height: 6vh;
     color: #0f2480;
     border: 1px solid #0f2480;
+    cursor: pointer;
 }
 .f-more:hover{
     color: white;
@@ -248,6 +251,7 @@ input[type=text]{
     /* height: 95vh; */
     display: flex;
     justify-content: space-between;
+    padding-top: 4%;
 }
 .p-card{
     width: 32%;
@@ -295,6 +299,7 @@ input[type=text]{
     color: white;
     border:none;
     background-color: #3554d1;
+    cursor: pointer;
 }
 .buy:hover{
     color: #0f2480;
@@ -347,9 +352,17 @@ input[type=text]{
 .right-first{
 width: 40%;
 }
+.right-first img:hover{
+    scale: 110%;
+  box-shadow: 3px 3px 5px rgb(115, 114, 114);
+}
 .right-second{
  width: 55%;
  padding-top: 10%;
+}
+.right-second img:hover{
+    scale: 110%;
+  box-shadow: 3px 3px 5px rgb(115, 114, 114);
 }
 .about-us{
     margin-top: 5%;
@@ -394,6 +407,7 @@ width: 40%;
     background-color: white;
     color: black;
     font-size: 1.6vw;
+    cursor: pointer;
 }
 .review{
     /* border: 1px solid; */
@@ -420,6 +434,7 @@ width: 40%;
     align-items: center;
 }
 
+
 .next{
     width: 50px;
     height: 50px;
@@ -428,6 +443,7 @@ width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 .review-info{
     font-size: 1.2vw;
@@ -449,7 +465,7 @@ width: 40%;
 }
 #person{
     position: absolute;
-    top: 16%;
+    top: 20%;
     left: 50%;
 }
 .prev{
@@ -460,12 +476,14 @@ width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 .next-btn{
     color: white;
     padding-top: 7%;
     text-align: center;
     font-size: 25px;
+   
 }
 .contact-us{
     width: 100%;
@@ -518,6 +536,7 @@ width: 40%;
     background-color: #f97616;
     color: white;
     border: none;
+    cursor: pointer;
 }
 .footer{
     padding-top: 5%;
@@ -565,6 +584,7 @@ input[type=email]{
     background-color: #f97616;
     color: white;
     border:none;
+    cursor: pointer;
 
 }
 .footer-icon a{
@@ -598,7 +618,7 @@ input[type=email]{
   }
   #check:checked ~ .nav-menu{
     left:25%;
-    /* display: block !important; */
+    display: block !important;
     transition: 2s;
   }
 
@@ -612,24 +632,27 @@ input[type=email]{
     }
     .nav-menu{
         width: 50%;
-        height: 30vh;
-        background-color: #ffd382eb;
-        top: 80px;
+        height: 15vh;
+        background-color: #0f2480;
+        top: 60px;
         position: fixed;
-        left: -100%;
-        /* display: none !important; */
+        /* left: -100%; */
+        display: none !important;
         font-size: 15px;
         display: block;
         opacity: 0.9;
         /* transition: 3s; */
 
     }
+    #toogle-bar{
+        display: none;
+    }
     .nav-menu li{
         display: block;
         text-align: center;
-        padding: 1%;
-        font-size: 5vw;
-        color: rgb(49, 21, 0);
+        font-size: 3.5vw;
+        color: #fcfcfc;
+        float: none;
       }
 
     #checkbtn{
@@ -723,23 +746,32 @@ input[type=email]{
     }
     .cards{
         width: 100%;
+        margin-top: 10%;
     }
     .cards-top {
         height: 0%;
-        padding-top: 10%;
     }
     .cards-bottom{
         text-align: center;
+        padding-bottom: 4%;
+    }
+    .house-sale p {
+        font-size: 3.5vw;
     }
     .h-cards-bottom{
         height: 0%;
         display: flex;
         flex-direction: column;
+        width: 90%;
+        margin-left: 5%;
     }
     .f-more{
         border-radius: 25px;
         width: 30%;
         height: 5vh;
+    }
+    .find-more{
+        padding-top: 4%;
     }
     .price h1 {
         font-size: 8vw;
@@ -758,7 +790,7 @@ input[type=email]{
         width: 100%;
     }
     .p-cart-top {
-        height: 8vh;
+        height: 9.2vh;
     }
     .card-info{
         padding-top: 2%;
@@ -848,6 +880,9 @@ input[type=email]{
         text-align: left;
         word-break: break-all;
     }
+    #review-line{
+        width: 10%;
+    }
     .reviewer-info h3{
         font-size: 3vw;
     }
@@ -856,12 +891,12 @@ input[type=email]{
     }
     #bg-logo {
         width: 10vw;
-        height: 20vh;
+        height: 18vh;
     }
     #person{
         left: 34%;
         width: 15vw;
-        height: 14vh;
+        height: 10vh;
     }
     .contact-us-top{
         margin-top: 7%;
