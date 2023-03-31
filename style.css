@@ -200,6 +200,7 @@ input[type=text]{
 }
 .cards-bottom{
     padding-top: 5%;
+    padding-left: 2%;
 }
 /* .cards-bottom h3{
     font-weight: bold;
@@ -271,6 +272,9 @@ input[type=text]{
     color: white;
     height: 65vh;
 }
+.p-cart-bottom:hover{
+    background-color: #f9bc16;
+}
 .p-info{
     padding: 12%;
 }
@@ -283,9 +287,6 @@ input[type=text]{
 .price p{
     font-size: 1vw;
     line-height: 30px;
-}
-.center{
-    background-color: #f9bc16;
 }
 .p-btn{
     /* border: 1px solid; */
@@ -305,15 +306,6 @@ input[type=text]{
     color: #0f2480;
     border: 1px solid #0f2480;
     background-color: #fcfcfc
-}
-#btn{
-    border:none;
-    background-color: #f9bc16;
-}
-#btn:hover{
-    color: #f9bc16;
-    border: 1px solid #f9bc16;
-    background-color: #fcfcfc;
 }
 .deal{
     /* border: 1px solid; */
